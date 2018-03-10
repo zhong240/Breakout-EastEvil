@@ -1,0 +1,85 @@
+\hypertarget{class_l_timer}{}\section{L\+Timer Class Reference}
+\label{class_l_timer}\index{L\+Timer@{L\+Timer}}
+
+
+This class defines the timer used for the game.  
+
+
+
+
+{\ttfamily \#include $<$L\+Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_l_timer_a95bb9588b09c253f331881fa5dd3ce62}\label{class_l_timer_a95bb9588b09c253f331881fa5dd3ce62}} 
+\mbox{\hyperlink{class_l_timer_a95bb9588b09c253f331881fa5dd3ce62}{L\+Timer}} ()
+\begin{DoxyCompactList}\small\item\em Initializes variables. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_a7dc11f05cf5098a6d06ebd6ebec96ed6}\label{class_l_timer_a7dc11f05cf5098a6d06ebd6ebec96ed6}} 
+void \mbox{\hyperlink{class_l_timer_a7dc11f05cf5098a6d06ebd6ebec96ed6}{start}} ()
+\begin{DoxyCompactList}\small\item\em Start the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_aeabbf5f935907fcfeaa7f4403741e4ae}\label{class_l_timer_aeabbf5f935907fcfeaa7f4403741e4ae}} 
+void \mbox{\hyperlink{class_l_timer_aeabbf5f935907fcfeaa7f4403741e4ae}{stop}} ()
+\begin{DoxyCompactList}\small\item\em Stop the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_a8a6c6af5435bdaa825a30f84877dc059}\label{class_l_timer_a8a6c6af5435bdaa825a30f84877dc059}} 
+void \mbox{\hyperlink{class_l_timer_a8a6c6af5435bdaa825a30f84877dc059}{pause}} ()
+\begin{DoxyCompactList}\small\item\em Pause the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_a67a946bffb25cf5eb8ab430ffb5f7cec}\label{class_l_timer_a67a946bffb25cf5eb8ab430ffb5f7cec}} 
+void \mbox{\hyperlink{class_l_timer_a67a946bffb25cf5eb8ab430ffb5f7cec}{unpause}} ()
+\begin{DoxyCompactList}\small\item\em Unpause the timer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_a57c4bdca0f7bdd75c65b6ab1499de1e7}\label{class_l_timer_a57c4bdca0f7bdd75c65b6ab1499de1e7}} 
+Uint32 \mbox{\hyperlink{class_l_timer_a57c4bdca0f7bdd75c65b6ab1499de1e7}{get\+Ticks}} ()
+\begin{DoxyCompactList}\small\item\em Get the current ticks. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_a102ca688eaa4109dd733b4b60a29d27c}\label{class_l_timer_a102ca688eaa4109dd733b4b60a29d27c}} 
+bool \mbox{\hyperlink{class_l_timer_a102ca688eaa4109dd733b4b60a29d27c}{is\+Started}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the timer has started. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_l_timer_ae1d9b504da6ed0f42e10f2338a9f88bb}\label{class_l_timer_ae1d9b504da6ed0f42e10f2338a9f88bb}} 
+bool \mbox{\hyperlink{class_l_timer_ae1d9b504da6ed0f42e10f2338a9f88bb}{is\+Paused}} ()
+\begin{DoxyCompactList}\small\item\em Check whether the timer is paused. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Uint32 \mbox{\hyperlink{class_l_timer_a1a1f0eeba488175958e91a6eed5483e7}{m\+Start\+Ticks}}
+\item 
+Uint32 \mbox{\hyperlink{class_l_timer_ac644044e1a79f57f7b657f7bc0325745}{m\+Paused\+Ticks}}
+\item 
+bool \mbox{\hyperlink{class_l_timer_aa97249c76c90700dc88ed648cdf87812}{m\+Paused}}
+\item 
+bool \mbox{\hyperlink{class_l_timer_adebab1cd99709109d8a259369458eaf7}{m\+Started}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines the timer used for the game. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_l_timer_aa97249c76c90700dc88ed648cdf87812}\label{class_l_timer_aa97249c76c90700dc88ed648cdf87812}} 
+\index{L\+Timer@{L\+Timer}!m\+Paused@{m\+Paused}}
+\index{m\+Paused@{m\+Paused}!L\+Timer@{L\+Timer}}
+\subsubsection{\texorpdfstring{m\+Paused}{mPaused}}
+{\footnotesize\ttfamily bool L\+Timer\+::m\+Paused\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether the timer is paused \mbox{\Hypertarget{class_l_timer_ac644044e1a79f57f7b657f7bc0325745}\label{class_l_timer_ac644044e1a79f57f7b657f7bc0325745}} 
+\index{L\+Timer@{L\+Timer}!m\+Paused\+Ticks@{m\+Paused\+Ticks}}
+\index{m\+Paused\+Ticks@{m\+Paused\+Ticks}!L\+Timer@{L\+Timer}}
+\subsubsection{\texorpdfstring{m\+Paused\+Ticks}{mPausedTicks}}
+{\footnotesize\ttfamily Uint32 L\+Timer\+::m\+Paused\+Ticks\hspace{0.3cm}{\ttfamily [private]}}
+
+The ticks passed when the timer is paused \mbox{\Hypertarget{class_l_timer_adebab1cd99709109d8a259369458eaf7}\label{class_l_timer_adebab1cd99709109d8a259369458eaf7}} 
+\index{L\+Timer@{L\+Timer}!m\+Started@{m\+Started}}
+\index{m\+Started@{m\+Started}!L\+Timer@{L\+Timer}}
+\subsubsection{\texorpdfstring{m\+Started}{mStarted}}
+{\footnotesize\ttfamily bool L\+Timer\+::m\+Started\hspace{0.3cm}{\ttfamily [private]}}
+
+Whether the timer has started \mbox{\Hypertarget{class_l_timer_a1a1f0eeba488175958e91a6eed5483e7}\label{class_l_timer_a1a1f0eeba488175958e91a6eed5483e7}} 
+\index{L\+Timer@{L\+Timer}!m\+Start\+Ticks@{m\+Start\+Ticks}}
+\index{m\+Start\+Ticks@{m\+Start\+Ticks}!L\+Timer@{L\+Timer}}
+\subsubsection{\texorpdfstring{m\+Start\+Ticks}{mStartTicks}}
+{\footnotesize\ttfamily Uint32 L\+Timer\+::m\+Start\+Ticks\hspace{0.3cm}{\ttfamily [private]}}
+
+The clock time when the timer starts 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+L\+Timer.\+h\item 
+L\+Timer.\+cpp\end{DoxyCompactItemize}

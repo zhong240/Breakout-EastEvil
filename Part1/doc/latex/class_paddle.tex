@@ -1,0 +1,104 @@
+\hypertarget{class_paddle}{}\section{Paddle Class Reference}
+\label{class_paddle}\index{Paddle@{Paddle}}
+
+
+This class set up the paddle.  
+
+
+
+
+{\ttfamily \#include $<$Paddle.\+h$>$}
+
+Inheritance diagram for Paddle\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_paddle}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_paddle_a53895671ddfde9ba668546065ec4f164}\label{class_paddle_a53895671ddfde9ba668546065ec4f164}} 
+\mbox{\hyperlink{class_paddle_a53895671ddfde9ba668546065ec4f164}{Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Default Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_paddle_adbc268e4faceefa60ab2a145757020fb}{Paddle}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} pos, \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_paddle_aa41c1f9a0b8d77d2aba050810cba9b61}{size}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}\label{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}} 
+\mbox{\hyperlink{class_paddle_ac03c6b92f0b9cd2e67edff4c318ad030}{$\sim$\+Paddle}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_paddle_a90bc62843d04bcd291ab799d323002cf}{on\+Trigger\+Collide}} (\mbox{\hyperlink{class_collider}{Collider}} collider, \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a9326e2676880c40f35832ed2c6d6b073}{normal}})
+\begin{DoxyCompactList}\small\item\em Callback for collision. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paddle_a78630fdd23aa5d43d7e8bcbac484404d}\label{class_paddle_a78630fdd23aa5d43d7e8bcbac484404d}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_paddle_a78630fdd23aa5d43d7e8bcbac484404d}{get\+Size}} ()
+\begin{DoxyCompactList}\small\item\em Get the size of the paddle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_paddle_a23c28f465a93c6a6ffade220c8f382c0}\label{class_paddle_a23c28f465a93c6a6ffade220c8f382c0}} 
+void \mbox{\hyperlink{class_paddle_a23c28f465a93c6a6ffade220c8f382c0}{set\+Size}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}})
+\begin{DoxyCompactList}\small\item\em Set the size of the paddle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_paddle_aa41c1f9a0b8d77d2aba050810cba9b61}{size}} = \mbox{\hyperlink{struct_vector2_d}{Vector2D}}( P\+A\+D\+D\+L\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+Z\+E\+\_\+X, P\+A\+D\+D\+L\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+Z\+E\+\_\+Y )
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+This class set up the paddle. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_paddle_adbc268e4faceefa60ab2a145757020fb}\label{class_paddle_adbc268e4faceefa60ab2a145757020fb}} 
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\index{Paddle@{Paddle}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{Paddle()}{Paddle()}}
+{\footnotesize\ttfamily Paddle\+::\+Paddle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{pos,  }\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{size }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & the position \\
+\hline
+{\em size} & the size \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_paddle_a90bc62843d04bcd291ab799d323002cf}\label{class_paddle_a90bc62843d04bcd291ab799d323002cf}} 
+\index{Paddle@{Paddle}!on\+Trigger\+Collide@{on\+Trigger\+Collide}}
+\index{on\+Trigger\+Collide@{on\+Trigger\+Collide}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{on\+Trigger\+Collide()}{onTriggerCollide()}}
+{\footnotesize\ttfamily void Paddle\+::on\+Trigger\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collider}{Collider}}}]{collider,  }\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{normal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Callback for collision. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & the object that paddle collides with \\
+\hline
+{\em normal} & the normal vector of the collider \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_collider_ae17ec8f9110acbc4df79d5addf8ac401}{Collider}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_paddle_aa41c1f9a0b8d77d2aba050810cba9b61}\label{class_paddle_aa41c1f9a0b8d77d2aba050810cba9b61}} 
+\index{Paddle@{Paddle}!size@{size}}
+\index{size@{size}!Paddle@{Paddle}}
+\subsubsection{\texorpdfstring{size}{size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Paddle\+::size = \mbox{\hyperlink{struct_vector2_d}{Vector2D}}( P\+A\+D\+D\+L\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+Z\+E\+\_\+X, P\+A\+D\+D\+L\+E\+\_\+\+I\+N\+I\+T\+I\+A\+L\+\_\+\+S\+I\+Z\+E\+\_\+Y )\hspace{0.3cm}{\ttfamily [private]}}
+
+size of the paddle 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Paddle.\+h\item 
+Paddle.\+cpp\end{DoxyCompactItemize}

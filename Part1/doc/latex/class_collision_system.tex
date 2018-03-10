@@ -1,0 +1,89 @@
+\hypertarget{class_collision_system}{}\section{Collision\+System Class Reference}
+\label{class_collision_system}\index{Collision\+System@{Collision\+System}}
+
+
+This class sets up the collision system.  
+
+
+
+
+{\ttfamily \#include $<$Collision\+System.\+h$>$}
+
+Inheritance diagram for Collision\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_collision_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_system_a128d2a8b457f119368f0c9fc95ed61f6}\label{class_collision_system_a128d2a8b457f119368f0c9fc95ed61f6}} 
+\mbox{\hyperlink{class_collision_system_a128d2a8b457f119368f0c9fc95ed61f6}{$\sim$\+Collision\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_system_a2f624088e9fd5ee6727bd6056d817a84}\label{class_collision_system_a2f624088e9fd5ee6727bd6056d817a84}} 
+bool \mbox{\hyperlink{class_collision_system_a2f624088e9fd5ee6727bd6056d817a84}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialize the collision system. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collision_system_ac437e5f41c5e333bf852a5fc34c0c127}{update}} ()
+\begin{DoxyCompactList}\small\item\em Detect collision at every frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collision_system_ae9119313d5718dc4206020f06e6a9718}\label{class_collision_system_ae9119313d5718dc4206020f06e6a9718}} 
+bool \mbox{\hyperlink{class_collision_system_ae9119313d5718dc4206020f06e6a9718}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Quit the collision system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_system_a3d25c8c12b0e1788a181c7efaf3763e2}\label{class_collision_system_a3d25c8c12b0e1788a181c7efaf3763e2}} 
+static \mbox{\hyperlink{class_collision_system}{Collision\+System}} $\ast$ \mbox{\hyperlink{class_collision_system_a3d25c8c12b0e1788a181c7efaf3763e2}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the only instance of collision system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_collision_system_ac8b1ff32bb9c9ff3e765c2b334713454}{Collision\+System}} ()
+\begin{DoxyCompactList}\small\item\em Private constructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collision_system_a19ad5712e387187c9198df38d78c140b}\label{class_collision_system_a19ad5712e387187c9198df38d78c140b}} 
+static \mbox{\hyperlink{class_collision_system}{Collision\+System}} $\ast$ \mbox{\hyperlink{class_collision_system_a19ad5712e387187c9198df38d78c140b}{g\+\_\+\+Collision\+System}} = N\+U\+LL
+\begin{DoxyCompactList}\small\item\em The only instance of collision system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class sets up the collision system. 
+
+Singleton design pattern is applied. There is only one collision system for one game. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collision_system_ac8b1ff32bb9c9ff3e765c2b334713454}\label{class_collision_system_ac8b1ff32bb9c9ff3e765c2b334713454}} 
+\index{Collision\+System@{Collision\+System}!Collision\+System@{Collision\+System}}
+\index{Collision\+System@{Collision\+System}!Collision\+System@{Collision\+System}}
+\subsubsection{\texorpdfstring{Collision\+System()}{CollisionSystem()}}
+{\footnotesize\ttfamily Collision\+System\+::\+Collision\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Private constructor. 
+
+For a Singleton class the constructor is never used. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collision_system_ac437e5f41c5e333bf852a5fc34c0c127}\label{class_collision_system_ac437e5f41c5e333bf852a5fc34c0c127}} 
+\index{Collision\+System@{Collision\+System}!update@{update}}
+\index{update@{update}!Collision\+System@{Collision\+System}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Collision\+System\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Detect collision at every frame. 
+
+This function is called every frame to detect possible collisions between the ball with the paddle, the ball with four walls, and the ball with bricks 
+
+Implements \mbox{\hyperlink{class_system_aad9113b7c2864e72d96232eadc13bc39}{System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Collision\+System.\+h\item 
+Collision\+System.\+cpp\end{DoxyCompactItemize}

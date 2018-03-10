@@ -1,0 +1,104 @@
+\hypertarget{class_control_system}{}\section{Control\+System Class Reference}
+\label{class_control_system}\index{Control\+System@{Control\+System}}
+
+
+This class defines Control \mbox{\hyperlink{class_system}{System}}.  
+
+
+
+
+{\ttfamily \#include $<$Control\+System.\+h$>$}
+
+Inheritance diagram for Control\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_control_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_control_system_a449890897411186d4f245a79e8f2d016}\label{class_control_system_a449890897411186d4f245a79e8f2d016}} 
+\mbox{\hyperlink{class_control_system_a449890897411186d4f245a79e8f2d016}{$\sim$\+Control\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_control_system_a2687cf6157bdef4736fcc7be9a12fc59}\label{class_control_system_a2687cf6157bdef4736fcc7be9a12fc59}} 
+bool \mbox{\hyperlink{class_control_system_a2687cf6157bdef4736fcc7be9a12fc59}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_control_system_ac3cb7e3272ab77ad22d47b157e4cc902}{get\+Inputs}} (int player\+Id)
+\begin{DoxyCompactList}\small\item\em Get the player inputs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_control_system_aaa4401e75f3530060fe41c52115bb7f5}{update}} (S\+D\+L\+\_\+\+Event e)
+\begin{DoxyCompactList}\small\item\em Capture the player input at every frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_control_system_a67acf8c6ff8f4de652bde98dae2555d4}\label{class_control_system_a67acf8c6ff8f4de652bde98dae2555d4}} 
+void \mbox{\hyperlink{class_control_system_a67acf8c6ff8f4de652bde98dae2555d4}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_control_system_a143b8db58b269cbd7d35abb488fbe290}\label{class_control_system_a143b8db58b269cbd7d35abb488fbe290}} 
+bool \mbox{\hyperlink{class_control_system_a143b8db58b269cbd7d35abb488fbe290}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Quit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_control_system_ad977d8c4661a10463f55703065bbe2bc}\label{class_control_system_ad977d8c4661a10463f55703065bbe2bc}} 
+static \mbox{\hyperlink{class_control_system}{Control\+System}} $\ast$ \mbox{\hyperlink{class_control_system_ad977d8c4661a10463f55703065bbe2bc}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the only instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_control_system_a4b8f52561261c53303c3db0a06ddceed}\label{class_control_system_a4b8f52561261c53303c3db0a06ddceed}} 
+\mbox{\hyperlink{class_control_system_a4b8f52561261c53303c3db0a06ddceed}{Control\+System}} ()
+\begin{DoxyCompactList}\small\item\em private constructor \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_control_system_aa8fb55ea98d7040c1c20383dce3b5f56}\label{class_control_system_aa8fb55ea98d7040c1c20383dce3b5f56}} 
+vector$<$ \mbox{\hyperlink{struct_vector2_d}{Vector2D}} $>$ \mbox{\hyperlink{class_control_system_aa8fb55ea98d7040c1c20383dce3b5f56}{player\+Inputs}}
+\begin{DoxyCompactList}\small\item\em player\+Inputs \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_control_system_a01a977c053a3cfab384a6d158cf34889}\label{class_control_system_a01a977c053a3cfab384a6d158cf34889}} 
+static \mbox{\hyperlink{class_control_system}{Control\+System}} $\ast$ \mbox{\hyperlink{class_control_system_a01a977c053a3cfab384a6d158cf34889}{g\+\_\+control\+System}} = N\+U\+LL
+\begin{DoxyCompactList}\small\item\em the only instance \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class defines Control \mbox{\hyperlink{class_system}{System}}. 
+
+Applied Singleton Design Pattern 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_control_system_ac3cb7e3272ab77ad22d47b157e4cc902}\label{class_control_system_ac3cb7e3272ab77ad22d47b157e4cc902}} 
+\index{Control\+System@{Control\+System}!get\+Inputs@{get\+Inputs}}
+\index{get\+Inputs@{get\+Inputs}!Control\+System@{Control\+System}}
+\subsubsection{\texorpdfstring{get\+Inputs()}{getInputs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Control\+System\+::get\+Inputs (\begin{DoxyParamCaption}\item[{int}]{player\+Id }\end{DoxyParamCaption})}
+
+
+
+Get the player inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player\+Id} & An integer represents the designated player \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_control_system_aaa4401e75f3530060fe41c52115bb7f5}\label{class_control_system_aaa4401e75f3530060fe41c52115bb7f5}} 
+\index{Control\+System@{Control\+System}!update@{update}}
+\index{update@{update}!Control\+System@{Control\+System}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Control\+System\+::update (\begin{DoxyParamCaption}\item[{S\+D\+L\+\_\+\+Event}]{e }\end{DoxyParamCaption})}
+
+
+
+Capture the player input at every frame. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & Keyboard event \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Control\+System.\+h\item 
+Control\+System.\+cpp\end{DoxyCompactItemize}

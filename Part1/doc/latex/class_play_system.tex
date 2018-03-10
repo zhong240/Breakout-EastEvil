@@ -1,0 +1,116 @@
+\hypertarget{class_play_system}{}\section{Play\+System Class Reference}
+\label{class_play_system}\index{Play\+System@{Play\+System}}
+
+
+This class sets up the play system.  
+
+
+
+
+{\ttfamily \#include $<$Play\+System.\+h$>$}
+
+Inheritance diagram for Play\+System\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_play_system}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_play_system_a615cfdd32a692d905aae334657180ae1}\label{class_play_system_a615cfdd32a692d905aae334657180ae1}} 
+\mbox{\hyperlink{class_play_system_a615cfdd32a692d905aae334657180ae1}{$\sim$\+Play\+System}} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_play_system_a6174f6f5609e2c215e72b059ed5c3a32}\label{class_play_system_a6174f6f5609e2c215e72b059ed5c3a32}} 
+bool \mbox{\hyperlink{class_play_system_a6174f6f5609e2c215e72b059ed5c3a32}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialization. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_play_system_a6c4d3a6a05a24f9a1f18842dbb3b52b1}\label{class_play_system_a6c4d3a6a05a24f9a1f18842dbb3b52b1}} 
+void \mbox{\hyperlink{class_play_system_a6c4d3a6a05a24f9a1f18842dbb3b52b1}{update}} ()
+\begin{DoxyCompactList}\small\item\em Update. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_play_system_a539276d9198c5dd754ee85d4a60a838f}\label{class_play_system_a539276d9198c5dd754ee85d4a60a838f}} 
+bool \mbox{\hyperlink{class_play_system_a539276d9198c5dd754ee85d4a60a838f}{quit}} ()
+\begin{DoxyCompactList}\small\item\em Quit play system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_play_system_ae6f2d7602c0576b40c5a75f55f671aea}\label{class_play_system_ae6f2d7602c0576b40c5a75f55f671aea}} 
+void \mbox{\hyperlink{class_play_system_ae6f2d7602c0576b40c5a75f55f671aea}{reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset game state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_play_system_aa3fb93111ca2ba8eb493f186ae113587}{is\+Win}} ()
+\item 
+bool \mbox{\hyperlink{class_play_system_a8af443fab3bc9fc40f061addfea4e8b0}{is\+Lose}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_play_system_afb53ec58d3bda753432457625f0fdac9}\label{class_play_system_afb53ec58d3bda753432457625f0fdac9}} 
+static \mbox{\hyperlink{class_play_system}{Play\+System}} $\ast$ \mbox{\hyperlink{class_play_system_afb53ec58d3bda753432457625f0fdac9}{get\+Instance}} ()
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_play_system}{Play\+System}} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_play_system_a38710825647f33127437d06b0fcc4186}\label{class_play_system_a38710825647f33127437d06b0fcc4186}} 
+\mbox{\hyperlink{class_play_system_a38710825647f33127437d06b0fcc4186}{Play\+System}} ()
+\begin{DoxyCompactList}\small\item\em Default Contructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_play_system_a259c6f581bfcace63445ffac48d8675f}{win\+State}} = false
+\item 
+bool \mbox{\hyperlink{class_play_system_a76a5ce42d2b9112171f587b04f992d59}{lose\+State}} = false
+\end{DoxyCompactItemize}
+\subsection*{Static Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_play_system}{Play\+System}} $\ast$ \mbox{\hyperlink{class_play_system_adfb9949639c2a4c96ee28b58fa1eb726}{g\+\_\+play\+System}} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class sets up the play system. 
+
+\mbox{\hyperlink{class_play_system}{Play\+System}} monitors the state of the game. Applied Singleton Design Pattern 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_play_system_a8af443fab3bc9fc40f061addfea4e8b0}\label{class_play_system_a8af443fab3bc9fc40f061addfea4e8b0}} 
+\index{Play\+System@{Play\+System}!is\+Lose@{is\+Lose}}
+\index{is\+Lose@{is\+Lose}!Play\+System@{Play\+System}}
+\subsubsection{\texorpdfstring{is\+Lose()}{isLose()}}
+{\footnotesize\ttfamily bool Play\+System\+::is\+Lose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if the play loses 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_play_system_aa3fb93111ca2ba8eb493f186ae113587}\label{class_play_system_aa3fb93111ca2ba8eb493f186ae113587}} 
+\index{Play\+System@{Play\+System}!is\+Win@{is\+Win}}
+\index{is\+Win@{is\+Win}!Play\+System@{Play\+System}}
+\subsubsection{\texorpdfstring{is\+Win()}{isWin()}}
+{\footnotesize\ttfamily bool Play\+System\+::is\+Win (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if the player wins 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_play_system_adfb9949639c2a4c96ee28b58fa1eb726}\label{class_play_system_adfb9949639c2a4c96ee28b58fa1eb726}} 
+\index{Play\+System@{Play\+System}!g\+\_\+play\+System@{g\+\_\+play\+System}}
+\index{g\+\_\+play\+System@{g\+\_\+play\+System}!Play\+System@{Play\+System}}
+\subsubsection{\texorpdfstring{g\+\_\+play\+System}{g\_playSystem}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_play_system}{Play\+System}} $\ast$ Play\+System\+::g\+\_\+play\+System = N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+the only instance \mbox{\Hypertarget{class_play_system_a76a5ce42d2b9112171f587b04f992d59}\label{class_play_system_a76a5ce42d2b9112171f587b04f992d59}} 
+\index{Play\+System@{Play\+System}!lose\+State@{lose\+State}}
+\index{lose\+State@{lose\+State}!Play\+System@{Play\+System}}
+\subsubsection{\texorpdfstring{lose\+State}{loseState}}
+{\footnotesize\ttfamily bool Play\+System\+::lose\+State = false\hspace{0.3cm}{\ttfamily [private]}}
+
+whether the player loses \mbox{\Hypertarget{class_play_system_a259c6f581bfcace63445ffac48d8675f}\label{class_play_system_a259c6f581bfcace63445ffac48d8675f}} 
+\index{Play\+System@{Play\+System}!win\+State@{win\+State}}
+\index{win\+State@{win\+State}!Play\+System@{Play\+System}}
+\subsubsection{\texorpdfstring{win\+State}{winState}}
+{\footnotesize\ttfamily bool Play\+System\+::win\+State = false\hspace{0.3cm}{\ttfamily [private]}}
+
+whether the player wins 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Play\+System.\+h\item 
+Play\+System.\+cpp\end{DoxyCompactItemize}

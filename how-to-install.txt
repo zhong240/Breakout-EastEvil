@@ -1,0 +1,11 @@
+Instructions:
+1. Make sure your system is Mac OS X.
+2. Install the following libraries on the links below.
+https://www.libsdl.org/download-2.0.php
+https://www.libsdl.org/projects/SDL_mixer/
+https://www.libsdl.org/projects/SDL_ttf/docs/SDL_ttf.html
+https://www.libsdl.org/projects/SDL_image/
+3. Open the terminal and change the directory to Part1, then type the following command:
+python macbuild.py
+4. Run the game by typing:
+./build/Breakout-EastEvil

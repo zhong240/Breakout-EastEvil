@@ -1,0 +1,166 @@
+\hypertarget{class_collider}{}\section{Collider Class Reference}
+\label{class_collider}\index{Collider@{Collider}}
+
+
+This class is the base class for all game objects that can collide.  
+
+
+
+
+{\ttfamily \#include $<$Collider.\+h$>$}
+
+Inheritance diagram for Collider\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_collider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collider_aa7186870221f868bbc74c3ae8609fa66}\label{class_collider_aa7186870221f868bbc74c3ae8609fa66}} 
+\mbox{\hyperlink{class_collider_aa7186870221f868bbc74c3ae8609fa66}{Collider}} ()
+\begin{DoxyCompactList}\small\item\em Default Contructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collider_a5dcac8919b41b7dec9a7516a8d9ac4f4}{Collider}} (\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$g)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_collider_a564acde9860f875a32a6638c573d87be}{$\sim$\+Collider}} ()
+\begin{DoxyCompactList}\small\item\em Empty destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_collider_a76e3c5867ef3ecd2057b9c091940abee}{on\+Collide}} (\mbox{\hyperlink{class_collider}{Collider}} collider)
+\begin{DoxyCompactList}\small\item\em Determine whether this object collides with another. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_collider_ae17ec8f9110acbc4df79d5addf8ac401}{on\+Trigger\+Collide}} (\mbox{\hyperlink{class_collider}{Collider}} collider, \mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a9326e2676880c40f35832ed2c6d6b073}{normal}})
+\begin{DoxyCompactList}\small\item\em Callback for the collision triggered. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_a45721b32a9fb6cdf8291c0db115ff54d}\label{class_collider_a45721b32a9fb6cdf8291c0db115ff54d}} 
+void \mbox{\hyperlink{class_collider_a45721b32a9fb6cdf8291c0db115ff54d}{set\+Bounding\+Box}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a078ab635e6ae3abe5be21ad0a4eef85b}{bounding\+Box}})
+\begin{DoxyCompactList}\small\item\em Set the boundary of collision detection. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a1568326683a3d1de3aedeaa22a36bdde}{get\+Bounding\+Box}} ()
+\begin{DoxyCompactList}\small\item\em Get the boundingbox. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_collider_af02a08d0a8ee0727d7e71b22bafc762f}{get\+Game\+Object}} ()
+\begin{DoxyCompactList}\small\item\em Get the game object this collider represents. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_abdd9452e37a8e9e0012becf31169a463}\label{class_collider_abdd9452e37a8e9e0012becf31169a463}} 
+void \mbox{\hyperlink{class_collider_abdd9452e37a8e9e0012becf31169a463}{set\+Normal}} (\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a9326e2676880c40f35832ed2c6d6b073}{normal}})
+\begin{DoxyCompactList}\small\item\em Set the normal vector of this collider. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_a4849a48d9226958af3203fb7de8a8390}\label{class_collider_a4849a48d9226958af3203fb7de8a8390}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a4849a48d9226958af3203fb7de8a8390}{get\+Normal}} ()
+\begin{DoxyCompactList}\small\item\em Get the normal vector of this collider. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_collider_a078ab635e6ae3abe5be21ad0a4eef85b}\label{class_collider_a078ab635e6ae3abe5be21ad0a4eef85b}} 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a078ab635e6ae3abe5be21ad0a4eef85b}{bounding\+Box}}
+\begin{DoxyCompactList}\small\item\em The bounding\+Box of the collider. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_collider_ad273d1041cab151a541e3c4a3b149fac}\label{class_collider_ad273d1041cab151a541e3c4a3b149fac}} 
+\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ \mbox{\hyperlink{class_collider_ad273d1041cab151a541e3c4a3b149fac}{game\+Object}} = N\+U\+LL
+\begin{DoxyCompactList}\small\item\em The game\+Object of the collider. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_vector2_d}{Vector2D}} \mbox{\hyperlink{class_collider_a9326e2676880c40f35832ed2c6d6b073}{normal}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is the base class for all game objects that can collide. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_collider_a5dcac8919b41b7dec9a7516a8d9ac4f4}\label{class_collider_a5dcac8919b41b7dec9a7516a8d9ac4f4}} 
+\index{Collider@{Collider}!Collider@{Collider}}
+\index{Collider@{Collider}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{Collider()}{Collider()}}
+{\footnotesize\ttfamily Collider\+::\+Collider (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$}]{g }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the} & game object that can collide \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collider_a564acde9860f875a32a6638c573d87be}\label{class_collider_a564acde9860f875a32a6638c573d87be}} 
+\index{Collider@{Collider}!````~Collider@{$\sim$\+Collider}}
+\index{````~Collider@{$\sim$\+Collider}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{$\sim$\+Collider()}{~Collider()}}
+{\footnotesize\ttfamily Collider\+::$\sim$\+Collider (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Empty destructor. 
+
+Here we can not free the game\+Object pointer, because it will be destrcuted by its inherited class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_collider_a1568326683a3d1de3aedeaa22a36bdde}\label{class_collider_a1568326683a3d1de3aedeaa22a36bdde}} 
+\index{Collider@{Collider}!get\+Bounding\+Box@{get\+Bounding\+Box}}
+\index{get\+Bounding\+Box@{get\+Bounding\+Box}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{get\+Bounding\+Box()}{getBoundingBox()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Collider\+::get\+Bounding\+Box (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the boundingbox. 
+
+\begin{DoxyReturn}{Returns}
+the size of the bounding box as a \mbox{\hyperlink{struct_vector2_d}{Vector2D}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_af02a08d0a8ee0727d7e71b22bafc762f}\label{class_collider_af02a08d0a8ee0727d7e71b22bafc762f}} 
+\index{Collider@{Collider}!get\+Game\+Object@{get\+Game\+Object}}
+\index{get\+Game\+Object@{get\+Game\+Object}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{get\+Game\+Object()}{getGameObject()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_game_object}{Game\+Object}} $\ast$ Collider\+::get\+Game\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the game object this collider represents. 
+
+\begin{DoxyReturn}{Returns}
+a pointer to the game object 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_collider_a76e3c5867ef3ecd2057b9c091940abee}\label{class_collider_a76e3c5867ef3ecd2057b9c091940abee}} 
+\index{Collider@{Collider}!on\+Collide@{on\+Collide}}
+\index{on\+Collide@{on\+Collide}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{on\+Collide()}{onCollide()}}
+{\footnotesize\ttfamily void Collider\+::on\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collider}{Collider}}}]{collider }\end{DoxyParamCaption})}
+
+
+
+Determine whether this object collides with another. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & the object it collides with \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_collider_ae17ec8f9110acbc4df79d5addf8ac401}\label{class_collider_ae17ec8f9110acbc4df79d5addf8ac401}} 
+\index{Collider@{Collider}!on\+Trigger\+Collide@{on\+Trigger\+Collide}}
+\index{on\+Trigger\+Collide@{on\+Trigger\+Collide}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{on\+Trigger\+Collide()}{onTriggerCollide()}}
+{\footnotesize\ttfamily void Collider\+::on\+Trigger\+Collide (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_collider}{Collider}}}]{collider,  }\item[{\mbox{\hyperlink{struct_vector2_d}{Vector2D}}}]{normal }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Callback for the collision triggered. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em collider} & the object it collides with \\
+\hline
+{\em normal} & the normal vector of the collider \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_ball_a3b386c2b504c84e82554a6f502643a2b}{Ball}}, \mbox{\hyperlink{class_brick_a37283bddbec3378192f5e8782e6f51a7}{Brick}}, \mbox{\hyperlink{class_wall_a04305c2b9f5030c2fb7270897a5f77a4}{Wall}}, and \mbox{\hyperlink{class_paddle_a90bc62843d04bcd291ab799d323002cf}{Paddle}}.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_collider_a9326e2676880c40f35832ed2c6d6b073}\label{class_collider_a9326e2676880c40f35832ed2c6d6b073}} 
+\index{Collider@{Collider}!normal@{normal}}
+\index{normal@{normal}!Collider@{Collider}}
+\subsubsection{\texorpdfstring{normal}{normal}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_vector2_d}{Vector2D}} Collider\+::normal\hspace{0.3cm}{\ttfamily [private]}}
+
+The normal vector of the collider 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Collider.\+h\item 
+Collider.\+cpp\end{DoxyCompactItemize}
